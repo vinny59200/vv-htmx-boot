@@ -1,0 +1,11 @@
+<!-- Include HTMX -->
+<script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
+
+
+<!-- HTML with HTMX attributes -->
+<div id="update-div">
+    <!-- Button that triggers an HTTP POST request to /some-endpoint -->
+    <button hx-post="/api/v1/some-endpoint" hx-trigger="click" hx-target="#update-div" hx-swap="outerHTML">
+        Click me!
+    </button>
+</div>
